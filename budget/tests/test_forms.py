@@ -9,7 +9,6 @@ class TestForms(SimpleTestCase):
 			'title': 'expense1',
 			'amount': 1000,
 			'category': 'development'
-
 		})
         
 		self.assertTrue(form.is_valid())
@@ -19,4 +18,4 @@ class TestForms(SimpleTestCase):
 
 
 		self.assertFalse(form.is_valid())
-		self.assertEquals(len(form.errors), 3)
+		self.assertEqual(len(form.errors), 3)
